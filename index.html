@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EcoClean - Waste Management System</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <div class="nav-container" id="navContainer">
+
+            <a href="#home" class="logo">
+                <span class="logo-icon">♻</span>
+                EcoClean
+            </a>
+
+            <div class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#report">Report Waste</a>
+                <a href="#pickup">Pickup</a>
+                <a href="#tracking">Track</a>
+                <a href="#awareness">Awareness</a>
+            </div>
+
+            <div class="nav-actions">
+
+                <button class="btn btn-outline"
+                    onclick="openModal('login')">
+                    Login
+                </button>
+
+                <button class="btn btn-primary"
+                    onclick="openModal('register')">
+                    Register
+                </button>
+
+            </div>
+
+            <button class="menu-btn" onclick="toggleMenu()">
+                ☰
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="container hero-grid">
+
+            <div class="hero-content">
+
+                <div class="badge">
+                    🌱 Smart & Sustainable Waste Management
+                </div>
+
+                <h1>
+                    Cleaner streets.
+                    <br>
+                    <span>Greener future.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Report waste issues, request pickups, track complaints,
+                    and learn how small actions can create a cleaner
+                    and healthier community.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#report" class="btn btn-primary">
+                        Report a Waste Issue
+                    </a>
+
+                    <a href="#pickup" class="btn btn-outline">
+                        Request Pickup →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-visual">
+
+                <div class="eco-circle">
+
+                    <div class="earth">
+                        🌍
+                    </div>
+
+                </div>
+
+                <div class="float-card float-1">
+
+                    <div class="float-icon">🚛</div>
+
+                    <div>
+                        Pickup
+                        <small>Scheduled easily</small>
+                    </div>
+
+                </div>
+
+                <div class="float-card float-2">
+
+                    <div class="float-icon">🔎</div>
+
+                    <div>
+                        Tracking
+                        <small>Real-time status</small>
+                    </div>
+
+                </div>
+
+                <div class="float-card float-3">
+
+                    <div class="float-icon">🌱</div>
+
+                    <div>
+                        Go Green
+                        <small>Recycle more</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= STATS ================= -->
+
+    <section class="stats">
+
+        <div class="container stats-grid">
+
+            <div class="stat-card">
+                <div class="stat-number">1,250+</div>
+                <p>Issues Resolved</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-number">3,480</div>
+                <p>Pickups Completed</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-number">98%</div>
+                <p>Citizen Satisfaction</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-number">12.4T</div>
+                <p>Waste Recycled</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SERVICES ================= -->
+
+    <section id="services">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div class="eyebrow">
+                    Our Services
+                </div>
+
+                <h2>
+                    Everything you need for a cleaner community
+                </h2>
+
+                <p>
+                    A simple digital platform for citizens to report,
+                    request, track and learn about waste management.
+                </p>
+
+            </div>
+
+
+            <div class="features-grid">
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">🚨</div>
+
+                    <h3>Report Waste Issues</h3>
+
+                    <p>
+                        Quickly report overflowing bins,
+                        illegal dumping and uncollected waste.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">🚛</div>
+
+                    <h3>Waste Pickup</h3>
+
+                    <p>
+                        Submit a pickup request by selecting
+                        waste type, date and location.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">🔎</div>
+
+                    <h3>Complaint Tracking</h3>
+
+                    <p>
+                        Track your complaint status from submission
+                        through resolution.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">🌱</div>
+
+                    <h3>Waste Awareness</h3>
+
+                    <p>
+                        Learn simple methods for reducing,
+                        reusing and recycling waste.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= REPORT WASTE ================= -->
+
+    <section class="form-section" id="report">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div class="eyebrow">Report</div>
+
+                <h2>Report a Waste Issue</h2>
+
+                <p>
+                    Help keep your neighborhood clean by reporting
+                    waste-related problems.
+                </p>
+
+            </div>
+
+
+            <div class="form-wrapper">
+
+                <form id="reportForm">
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label>Your Name</label>
+
+                            <input
+                                type="text"
+                                id="reportName"
+                                placeholder="Enter your name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>Issue Type</label>
+
+                            <select id="issueType" required>
+
+                                <option value="">
+                                    Select issue
+                                </option>
+
+                                <option>
+                                    Overflowing Bin
+                                </option>
+
+                                <option>
+                                    Illegal Dumping
+                                </option>
+
+                                <option>
+                                    Uncollected Waste
+                                </option>
+
+                                <option>
+                                    Open Garbage Area
+                                </option>
+
+                                <option>
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group full">
+
+                            <label>Location</label>
+
+                            <input
+                                type="text"
+                                id="issueLocation"
+                                placeholder="Enter waste location"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group full">
+
+                            <label>Description</label>
+
+                            <textarea
+                                id="issueDesc"
+                                placeholder="Describe the problem..."
+                                required
+                            ></textarea>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-footer">
+
+                        <button
+                            class="btn btn-primary"
+                            type="submit"
+                        >
+                            Submit Report
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PICKUP ================= -->
+
+    <section id="pickup">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div class="eyebrow">
+                    Pickup Service
+                </div>
+
+                <h2>Request Waste Pickup</h2>
+
+                <p>
+                    Schedule a convenient pickup for your household
+                    or recyclable waste.
+                </p>
+
+            </div>
+
+
+            <div class="form-wrapper">
+
+                <form id="pickupForm">
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label>Name</label>
+
+                            <input
+                                type="text"
+                                id="pickupName"
+                                placeholder="Enter your name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>Waste Type</label>
+
+                            <select id="wasteType" required>
+
+                                <option value="">
+                                    Select waste type
+                                </option>
+
+                                <option>Household</option>
+                                <option>Recyclable</option>
+                                <option>Organic</option>
+                                <option>Electronic</option>
+                                <option>Bulk Waste</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>Pickup Date</label>
+
+                            <input
+                                type="date"
+                                id="pickupDate"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>Preferred Time</label>
+
+                            <select id="pickupTime" required>
+
+                                <option value="">
+                                    Select time
+                                </option>
+
+                                <option>8 AM - 11 AM</option>
+                                <option>11 AM - 2 PM</option>
+                                <option>2 PM - 5 PM</option>
+                                <option>5 PM - 7 PM</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group full">
+
+                            <label>Pickup Address</label>
+
+                            <textarea
+                                id="pickupAddress"
+                                placeholder="Enter complete pickup address"
+                                required
+                            ></textarea>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-footer">
+
+                        <button
+                            class="btn btn-primary"
+                            type="submit"
+                        >
+                            Request Pickup
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= DASHBOARD ================= -->
+
+    <section class="dashboard" id="dashboard">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div class="eyebrow">
+                    User Dashboard
+                </div>
+
+                <h2>Your EcoClean Activity</h2>
+
+                <p>
+                    View your reports, pickup requests and
+                    environmental contribution.
+                </p>
+
+            </div>
+
+
+            <div class="dashboard-grid">
+
+                <div class="dashboard-card">
+
+                    <div class="top">
+                        <strong>Total Reports</strong>
+                        <span>🚨</span>
+                    </div>
+
+                    <div
+                        class="number"
+                        id="reportCount"
+                    >
+                        12
+                    </div>
+
+                    <p>Waste issues submitted</p>
+
+                </div>
+
+
+                <div class="dashboard-card">
+
+                    <div class="top">
+                        <strong>Resolved</strong>
+                        <span>✅</span>
+                    </div>
+
+                    <div
+                        class="number"
+                        id="resolvedCount"
+                    >
+                        9
+                    </div>
+
+                    <p>Issues successfully resolved</p>
+
+                </div>
+
+
+                <div class="dashboard-card">
+
+                    <div class="top">
+                        <strong>Pickups</strong>
+                        <span>🚛</span>
+                    </div>
+
+                    <div
+                        class="number"
+                        id="pickupCount"
+                    >
+                        7
+                    </div>
+
+                    <p>Pickup requests completed</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="dashboard-lower">
+
+                <div class="panel">
+
+                    <h3>Recent Activity</h3>
+
+                    <div class="activity">
+
+                        <div class="activity-icon">🚛</div>
+
+                        <div>
+                            <strong>
+                                Waste pickup completed
+                            </strong>
+
+                            <small>
+                                Today • Household waste
+                            </small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="activity">
+
+                        <div class="activity-icon">🚨</div>
+
+                        <div>
+                            <strong>
+                                Complaint submitted
+                            </strong>
+
+                            <small>
+                                Yesterday • WC-1042
+                            </small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="activity">
+
+                        <div class="activity-icon">♻️</div>
+
+                        <div>
+                            <strong>
+                                Recycling goal updated
+                            </strong>
+
+                            <small>
+                                76% monthly target
+                            </small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="panel">
+
+                    <h3>Monthly Recycling Goal</h3>
+
+                    <div class="score">76%</div>
+
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+
+                    <p class="muted-text">
+                        Keep recycling to reach your monthly goal.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= TRACKING ================= -->
+
+    <section id="tracking">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div class="eyebrow">
+                    Complaint Tracking
+                </div>
+
+                <h2>Track Your Complaint</h2>
+
+                <p>
+                    Enter your complaint ID to check its current status.
+                </p>
+
+            </div>
+
+
+            <div class="tracking-box">
+
+                <div class="track-search">
+
+                    <input
+                        type="text"
+                        id="trackingId"
+                        value="WC-1042"
+                        placeholder="Example: WC-1042"
+                    >
+
+                    <button
+                        class="btn btn-primary"
+                        onclick="trackComplaint()"
+                    >
+                        Track Complaint
+                    </button>
+
+                </div>
+
+
+                <div class="complaint-card">
+
+                    <div class="complaint-header">
+
+                        <div>
+
+                            <p class="muted-small">
+                                Complaint ID
+                            </p>
+
+                            <h3 id="complaintId">
+                                WC-1042
+                            </h3>
+
+                        </div>
+
+                        <span
+                            class="status progress-status"
+                            id="complaintStatus"
+                        >
+                            In Progress
+                        </span>
+
+                    </div>
+
+
+                    <p
+                        id="complaintDescription"
+                        class="muted-text"
+                    >
+                        Overflowing waste bin reported at
+                        Green Park Road.
+                    </p>
+
+
+                    <div class="steps">
+
+                        <div class="step active">
+
+                            <div class="step-circle">✓</div>
+
+                            <span>Submitted</span>
+
+                        </div>
+
+
+                        <div class="step active">
+
+                            <div class="step-circle">✓</div>
+
+                            <span>Assigned</span>
+
+                        </div>
+
+
+                        <div class="step active">
+
+                            <div class="step-circle">3</div>
+
+                            <span>In Progress</span>
+
+                        </div>
+
+
+                        <div class="step">
+
+                            <div class="step-circle">4</div>
+
+                            <span>Resolved</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= AWARENESS ================= -->
+
+    <section id="awareness">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div class="eyebrow">
+                    Waste Awareness
+                </div>
+
+                <h2>
+                    Small habits. Big impact.
+                </h2>
+
+                <p>
+                    Simple ways to reduce the amount of waste
+                    that reaches landfills.
+                </p>
+
+            </div>
+
+
+            <div class="awareness-grid">
+
+                <div class="awareness-card">
+
+                    <div class="awareness-top">
+                        ♻️
+                    </div>
+
+                    <div class="awareness-body">
+
+                        <h3>
+                            Follow the 3R Principle
+                        </h3>
+
+                        <p>
+                            Reduce what you consume, reuse products
+                            whenever possible and recycle materials.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="awareness-card">
+
+                    <div class="awareness-top">
+                        🥬
+                    </div>
+
+                    <div class="awareness-body">
+
+                        <h3>
+                            Separate Waste
+                        </h3>
+
+                        <p>
+                            Keep wet, dry, recyclable and hazardous
+                            waste separated.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="awareness-card">
+
+                    <div class="awareness-top">
+                        🌱
+                    </div>
+
+                    <div class="awareness-body">
+
+                        <h3>
+                            Try Composting
+                        </h3>
+
+                        <p>
+                            Organic kitchen waste can be converted
+                            into useful compost.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ADMIN ================= -->
+
+    <section class="admin" id="admin">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div class="eyebrow admin-eyebrow">
+                    Admin Dashboard
+                </div>
+
+                <h2>
+                    Waste Management Overview
+                </h2>
+
+                <p>
+                    Frontend demonstration of an administrator
+                    management dashboard.
+                </p>
+
+            </div>
+
+
+            <div class="admin-grid">
+
+                <div class="admin-stat">
+                    <strong>24</strong>
+                    <span>Open Complaints</span>
+                </div>
+
+                <div class="admin-stat">
+                    <strong>18</strong>
+                    <span>Pending Pickups</span>
+                </div>
+
+                <div class="admin-stat">
+                    <strong>2,846</strong>
+                    <span>Registered Users</span>
+                </div>
+
+                <div class="admin-stat">
+                    <strong>91%</strong>
+                    <span>Resolution Rate</span>
+                </div>
+
+            </div>
+
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Complaint ID</th>
+                            <th>Issue</th>
+                            <th>Location</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+                            <td>WC-1042</td>
+                            <td>Overflowing Bin</td>
+                            <td>Green Park Road</td>
+                            <td>28 Sep 2026</td>
+
+                            <td>
+                                <span class="status progress-status">
+                                    In Progress
+                                </span>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>WC-1041</td>
+                            <td>Illegal Dumping</td>
+                            <td>Station Road</td>
+                            <td>27 Sep 2026</td>
+
+                            <td>
+                                <span class="status resolved">
+                                    Resolved
+                                </span>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>WC-1039</td>
+                            <td>Uncollected Waste</td>
+                            <td>Civil Lines</td>
+                            <td>26 Sep 2026</td>
+
+                            <td>
+                                <span class="status progress-status">
+                                    In Progress
+                                </span>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+
+    <section class="cta">
+
+        <div class="container">
+
+            <div class="cta-box">
+
+                <div>
+
+                    <h2>
+                        Be part of a cleaner city.
+                    </h2>
+
+                    <p>
+                        Report waste, recycle responsibly and
+                        encourage others to go green.
+                    </p>
+
+                </div>
+
+                <a href="#report" class="btn">
+                    Report an Issue
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="container footer-inner">
+
+            <div class="logo">
+
+                <span class="logo-icon">♻</span>
+
+                EcoClean
+
+            </div>
+
+            <p>
+                © 2026 EcoClean • Frontend Prototype •
+                Built with HTML, CSS & JavaScript
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= LOGIN/REGISTER MODAL ================= -->
+
+    <div
+        class="modal-overlay"
+        id="authModal"
+        onclick="closeModalOutside(event)"
+    >
+
+        <div class="modal">
+
+            <button
+                class="modal-close"
+                onclick="closeModal()"
+            >
+                ×
+            </button>
+
+
+            <h2>
+                Welcome to EcoClean
+            </h2>
+
+            <p>
+                Login or create a demo account.
+            </p>
+
+
+            <div class="auth-tabs">
+
+                <button
+                    class="auth-tab active"
+                    id="loginTab"
+                    onclick="switchAuth('login')"
+                >
+                    Login
+                </button>
+
+                <button
+                    class="auth-tab"
+                    id="registerTab"
+                    onclick="switchAuth('register')"
+                >
+                    Register
+                </button>
+
+            </div>
+
+
+            <!-- LOGIN -->
+
+            <form
+                class="auth-form active"
+                id="loginForm"
+            >
+
+                <div class="form-group">
+
+                    <label>Email</label>
+
+                    <input
+                        type="email"
+                        placeholder="you@example.com"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Password</label>
+
+                    <input
+                        type="password"
+                        placeholder="Enter password"
+                        required
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-primary"
+                >
+                    Login
+                </button>
+
+            </form>
+
+
+            <!-- REGISTER -->
+
+            <form
+                class="auth-form"
+                id="registerForm"
+            >
+
+                <div class="form-group">
+
+                    <label>Full Name</label>
+
+                    <input
+                        type="text"
+                        placeholder="Your name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Email</label>
+
+                    <input
+                        type="email"
+                        placeholder="you@example.com"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Password</label>
+
+                    <input
+                        type="password"
+                        placeholder="Create password"
+                        required
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-primary"
+                >
+                    Create Account
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- Toast -->
+
+    <div class="toast" id="toast"></div>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
